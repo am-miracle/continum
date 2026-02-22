@@ -17,7 +17,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import { HugeiconsIcon } from "@hugeicons/react"
-import { ArrowDown01Icon, PlusSignIcon } from "@hugeicons/core-free-icons"
+import { PlusSignIcon, UnfoldLessIcon } from "@hugeicons/core-free-icons"
 
 export function TeamSwitcher({
   teams,
@@ -44,7 +44,7 @@ export function TeamSwitcher({
                 {activeTeam.logo}
               </div>
               <span className="truncate font-medium">{activeTeam.name}</span>
-              <HugeiconsIcon icon={ArrowDown01Icon} strokeWidth={2} className="opacity-50" />
+              <HugeiconsIcon icon={UnfoldLessIcon} strokeWidth={2} className="opacity-50" />
             </SidebarMenuButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent

@@ -30,7 +30,7 @@ export function NavMain({
 
         return (
           <SidebarMenuItem key={item.title}>
-            <SidebarMenuButton asChild isActive={isActive}>
+            <SidebarMenuButton asChild isActive={isActive} className={`${isActive && "border-accent rounded-lg border-2"}`}>
               <Link href={item.url}>
                 {item.icon}
                 <span className="font-normal! text-sm!">{item.title}</span>

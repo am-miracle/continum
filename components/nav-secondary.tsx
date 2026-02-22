@@ -34,7 +34,7 @@ export function NavSecondary({
         <SidebarMenu>
           {items.map((item) => (
             <SidebarMenuItem key={item.title}>
-              <SidebarMenuButton asChild isActive={pathname.startsWith(item.url)}>
+              <SidebarMenuButton asChild isActive={pathname.startsWith(item.url)} className={`${pathname.startsWith(item.url) && "border-accent rounded-lg border-2"}`}>
                 <Link href={item.url}>
                   {item.icon}
                   <span className="font-normal text-sm">{item.title}</span>
