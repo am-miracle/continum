@@ -1,5 +1,6 @@
-import { ComponentExample } from "@/components/component-example";
 
 export default function Page() {
-return <ComponentExample />;
+    return <main>
+        <p className="font-normal text-sm">Welcome to continuum</p>
+    </main>;
 }

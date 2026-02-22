@@ -143,9 +143,9 @@
   --info-ring: oklch(0.9011 0.0571 231.4652);
   --opacity-100: oklch(1.0000 0.0000 89.8756 / 0);
   --custom-border-subtle: oklch(0.0000 0.0000 0.0000 / 0.05000000074505806);
-  --font-sans: Open Runde;
+  --font-sans: "Open Runde";
   --font-serif: Georgia;
-  --font-mono: JetBrains Mono;
+  --font-mono: "JetBrains Mono";
   --shadow-x: 0px;
   --shadow-y: 2px;
   --shadow-blur: 4px;
@@ -265,6 +265,6 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
 }
